@@ -1,0 +1,324 @@
+/* Fix navbar background */
+.navbar {
+  background-color: #222; /* Dark gray */
+  padding: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Navbar text color */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important; /* Ensures links are visible */
+}
+
+/* Fix hidden navbar links */
+.navbar-nav {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Ensure Dark Mode compatibility */
+.dark-mode .navbar {
+  background-color: #000 !important;
+}
+
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .nav-link {
+  color: #d5d0b9 !important; /* Yellow for dark mode */
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #ece4c2 !important;
+}
+
+/* Mobile Navbar Fix */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+body {
+  background-color: #efe2e2;
+}
+/* Basic Styling */
+#about {
+  background-color: #efe2e2;
+  padding: 50px 20px;
+}
+
+/* Container Styling */
+.About_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: auto;
+}
+/*Image Styling */
+.photo img {
+  width: 250px;  /* Adjust image size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Section */
+.about {
+  width: 55%;
+  text-align: justify;
+}
+
+.header {
+  font-size: 28px;
+  color: #333;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .About_container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .photo img {
+      width: 70%; /* Adjust image size on small screens */
+      margin-bottom: 15px;
+  }
+
+  .about {
+      width: 90%;
+  }
+}
+.container {
+  font-weight: 200px;
+  text-align: center;
+
+}
+.button {
+  background-color: black;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px;
+}
+.Ed-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 180px; /* Adjust image size */
+  margin-bottom: 15px;
+}
+
+.Education {
+  display: flex;
+  flex-wrap: wrap;  /* Allows wrapping if needed */
+  justify-content: space-between; /* Ensures spacing */
+  gap: 20px;
+}
+
+/* Each card takes ~30% width for 3 in a row */
+.card {
+  width: 30%;
+  background: #131111;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(181, 174, 174, 0.1);
+  text-align: left;
+  color: aliceblue;
+}
+h3 {
+  text-decoration: underline;
+}
+h4,h5 {
+  margin: 5px 0;
+  justify-content: center;
+}
+
+/* Responsive: Stack cards on small screens */
+@media (max-width: 768px) {
+  .Education {
+      flex-direction: column;
+      align-items: center;
+  }
+  .card {
+      width: 90%; /* Full width on small screens */
+  }
+}
+.p_card {
+  width: 50%;
+  justify-content: space-between;
+}
+#projects {
+  background-color: #efe2e2;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+/* Card Styling */
+.project-card {
+  background-color: #131111;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(181, 174, 174, 0.1);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Image */
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Card Title */
+.project-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d9e0e3;
+}
+
+/* Card Footer */
+.project-card .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+}
+
+/* Buttons */
+.project-card .btn {
+  background: #e6e7e9;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background: #090909;
+  border: 2px;
+}
+.skills {
+  display: flex
+}
+.skills-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+.cer-container {
+  text-align: center;
+}
+ul {
+  list-style-type: disc; /* Use disc, circle, or square */
+  padding-left: 20px; /* Adjust indentation */
+  margin-left: 20px;
+}
+.cer-container ul {
+  list-style-type: disc; /* Ensure bullets for certification list */
+  text-align: left; /* Align items properly */
+  display: inline-block; /* Prevent full-width centering */
+}
+.skills-container ul {
+  list-style-type: disc; /* Ensure bullets for certification list */
+  text-align: left; /* Align items properly */
+  display: inline-block;
+}
+
+li {
+  display: list-item;
+}
+/* Center the entire projects section */
+#projects {
+  background-color: #efe2e2;
+  padding: 30px 0;
+  border-radius: 10px;
+  text-align: center; /* Centers the title */
+}
+
+/* Center the row inside projects */
+#projects .row {
+  justify-content: center; /* Align cards in the center */
+}
+
+/* Make project cards wider and centered */
+.project-card {
+  background-color: #131111;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(181, 174, 174, 0.1);
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;  /* Ensures proper width on small screens */
+  max-width: 400px; /* Prevents cards from becoming too wide */
+  margin: auto; /* Ensures horizontal centering */
+}
+
+/* Adjust card width for different screen sizes */
+@media (min-width: 768px) {
+  .row-cols-md-2 .col {
+    flex: 0 0 45%; /* Two cards per row */
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .row-cols-lg-3 .col {
+    flex: 0 0 30%; /* Three cards per row */
+    max-width: 30%;
+  }
+}
+
+/* Ensure images fit nicely */
+.project-card img {
+  width: 100%; /* Full width */
+  height: 220px; /* Keep consistent height */
+  object-fit: cover; /* Avoid stretching */
+  border-radius: 10px;
+}
+
+/* Center button in footer */
+.project-card .card-footer {
+  text-align: center;
+}
+
+/* Extra centering if needed */
+@media (max-width: 768px) {
+  .project-card {
+    width: 95%; /* Wider on small screens */
+  }
+}
+.contact {
+  text-align: center;
+}
+.contact_container {
+ text-align: center;
+}
+/* Default Light Mode */
+body {
+  background-color: #efe2e2;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+.form-control {
+  background-color: #726a6a;
+}
